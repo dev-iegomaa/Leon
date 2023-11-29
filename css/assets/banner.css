@@ -1,0 +1,21 @@
+/* Start Banner Style */
+
+#banner {
+    background: url('../../image/mointain.jpg') no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+}
+
+#banner h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    #banner h1 {
+        font-size: 40px;
+    }
+}
+
+/* End Banner Style */

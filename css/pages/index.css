@@ -1,0 +1,289 @@
+/* Start Features Style */
+
+#features {
+    background-color: var(--section-bg-color);
+    padding: var(--section-padding);
+}
+
+/* @media (min-width: 992px) {
+    #features .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #features .container article {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #features .container article {
+        width: 32%;
+        margin-bottom: 0;
+    }
+} */
+
+#features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    column-gap: 20px;
+}
+
+#features .container article {
+    padding: 0 15px;
+    margin-bottom: 25px;
+    
+}
+
+#features .container article h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: var(--dark-color);
+}
+
+#features .container article p {
+    color: var(--p-color);
+}
+
+#features .container article i {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+/* End Features Style */
+
+/* Start Services Style */
+
+#services {
+    padding: var(--section-padding);
+}
+
+/* @media (min-width: 768px) {
+    #services section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #services section article {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    #services section article {
+        width: 32%;
+    }
+} */
+
+#services section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 50px;
+}
+
+#services section article div i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+#services section article div div {
+    margin-bottom: 50px;
+}
+
+#services section article div div h4 {
+    font-size: 22px;
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 15px;
+}
+
+#services section article div div p {
+    color: var(--p-color);
+}
+
+#services section article:last-of-type {
+    background-color: var(--section-bg-color);
+    width: 300px;
+    height: 330px;
+    position: relative;
+    top: 50px;
+}
+
+#services section article:last-of-type::before {
+    content: "";
+    position: absolute;
+    top: -52.5px;
+    right: -45px;
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: calc(100% + 105px);
+    z-index: -1;
+}
+
+/* End Services Style */
+
+/* Start Portifolio Style */
+
+#portifolio {
+    background-color: var(--section-bg-color);
+    padding: var(--section-padding);
+}
+
+/* @media (min-width: 768px) {
+    #portifolio section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #portifolio section article {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    #portifolio section article {
+        width: 32%;
+    }
+} */
+
+#portifolio section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 10px 20px;
+}
+
+#portifolio section article {
+    background-color: var(--white-color);
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: initial;
+    margin-bottom: 15px;
+    transition-property: box-shadow;
+    transition-duration: var(--transition-duration);
+}
+
+#portifolio section article:hover {
+    box-shadow: 0px 0px 20px #aeadad;
+}
+
+#portifolio section article div {
+    overflow: hidden;
+}
+
+#portifolio section article img {
+    display: block;
+    cursor: pointer;
+    transition-property: transform, filter;
+    transition-duration: var(--transition-duration);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+#portifolio section article img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#portifolio section article h4 {
+    padding: 20px 0 10px 20px;
+}
+
+#portifolio section article p {
+    padding: 0 0 30px 20px;
+}
+
+/* End Portifolio Style */
+
+/* Start About Style */
+
+#about {
+    padding: var(--section-padding);
+}
+
+@media (min-width: 992px) {
+    #about section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #about section div,
+    #about section article {
+        width: 49%;
+    }
+}
+
+#about section div {
+    background-color: var(--section-bg-color);
+    width: 300px;
+    height: 330px;
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+}
+
+#about section div::before {
+    content: "";
+    position: absolute;
+    top: -52.5px;
+    left: -45px;
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: calc(100% + 105px);
+    z-index: -1;
+}
+
+#about section div::after {
+    content: "";
+    position: absolute;
+    top: -35.5px;
+    right: -142px;
+    width: 100px;
+    height: 73%;
+    z-index: -1;
+    border-left: 85px solid var(--primary-color);
+    border-bottom: 85px solid var(--primary-color);
+}
+
+#about section article {
+    margin-top: 150px;
+}
+
+
+@media (min-width: 992px) {
+    #about section article {
+        margin-top: 50px;
+    }
+}
+
+#about section article p {
+    text-align: initial;
+}
+
+#about section article p:first-of-type {
+    color: #333;
+    font-weight: var(--font-weight-semibold);
+}
+
+#about section article hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--primary-color);
+    width: 45%;
+    margin: 25px 0;
+}
+
+#about section article p:last-of-type {
+    color: #777;
+}
+
+/* End About Style */

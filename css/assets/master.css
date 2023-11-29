@@ -1,0 +1,133 @@
+/* Start Master Style */
+
+:root {
+    --primary-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-bg-color: #fafafa;
+    --white-color: #fff;
+    --dark-color: #000;
+    --p-color: #334752;
+    --section-padding: 3rem 0;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --border-radius: .25rem;
+    --transition-duration: .5s;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Shantell Sans', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.go-to-nav {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: #f6f6f6;
+    font-weight: var(--font-weight-bold);
+}
+
+button {
+    font-family: 'Shantell Sans', cursive;
+    margin-top: 10px;
+    border: none;
+    background-image: linear-gradient(90deg, #2980b9, #27ae60);
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+button a {
+    padding: 10px 27px;
+    display: block;
+    background-color: var(--white-color);
+    margin: .1rem;
+    transition-property: background-color, color;
+    transition-duration: var(--transition-duration);
+}
+
+button a:hover {
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header h3 {
+    font-size: 115px;
+    color: #ebeced;
+    font-weight: var(--font-weight-bold);
+}
+
+header p {
+    margin-top: -50px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    header h3 {
+        font-size: 80px;
+    }
+
+    header p {
+        margin-top: -30px;
+        font-size: 16px;
+    }
+}
+
+p {
+    line-height: 25px;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+html::-webkit-scrollbar {
+    width: 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Start Master Style */

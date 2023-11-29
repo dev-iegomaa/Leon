@@ -1,0 +1,98 @@
+/* Start Contact Style */
+
+#contact {
+    background-color: var(--section-bg-color);
+    padding: var(--section-padding);
+}
+
+#contact section {
+    text-align: initial;
+}
+
+#contact h4 {
+    margin: 20px 0;
+    color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+    #contact h4 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact h4 {
+        font-size: 40px;
+    }
+}
+
+#contact h5 {
+    margin: 0 0 20px 50px;
+    color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    #contact h5 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact h5 {
+        font-size: 30px;
+    }
+}
+
+#contact h6 {
+    display: inline-block;
+    margin: 10px 25px 0 100px;
+}
+
+@media (min-width: 768px) {
+    #contact h6 {
+        font-size: 13px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    #contact h6 {
+        font-size: 16px;
+    }
+    
+}
+
+#contact ul {
+    display: inline-block;
+}
+
+#contact ul li i:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+#contact ul li i {
+    font-size: 17px;
+    transition-property: color;
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
+}
+
+#contact ul li i:hover {
+    color: var(--primary-color);
+}
+
+/* End Contact Style */
+
+/* Start Footer Style */
+
+#footer {
+    background-color: var(--secondary-color);
+    padding: 30px 0;
+    color: var(--white-color);
+}
+
+#footer span {
+    color: var(--primary-color);
+}
+
+/* End Footer Style */
